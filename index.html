@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>watch</title>
+  <link rel="stylesheet" href="./watch.css">
+</head>
+<body>
+  <svg class="canvas" width="600" height="600" viewBox="-145 -145 300 300">
+    <circle class="minute_marker" r="90" pathLength="60" />
+    <circle class="hour_marker" r="90" pathLength="60" />
+
+    <g id="hour_hand">
+      <line class="hand" x1="0" y1="0" x2="0" y2="-50" />
+      <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-50" />
+      <polygon points="-3,-47 -3,-50, 0,-50 3,-50 3,-47 0,-50" class="hour_trimmer" />
+    </g>
+    <g id="minute_hand">
+      <line class="hand" x1="0" y1="0" x2="0" y2="-80" />
+      <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-80" />
+      <polygon points="-3,-77 -3,-80, 0,-80 3,-80 3,-77 0,-80" class="minute_trimmer" />
+    </g>
+    <g id="second_hand">
+      <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
+    </g>
+    <text id="hour_text" x="0%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff">00:00:00</text>
+    <circle class="middle_pin" r="4"/>
+  </svg>
+  <script src="./watch.js"></script>
+</body>
+</html>
