@@ -1,0 +1,52 @@
+.canvas {
+    border: 2px solid #f0f0f0;
+    background: #ad2121;
+  }
+  
+  .middle_pin {
+    fill: #f0f0f0;
+    stroke: #f0f0f0;
+    stroke-width: 1;
+  }
+  
+  .hour_marker {
+    fill: transparent;
+    stroke: #f0f0c9;
+    stroke-width: 7;
+    stroke-dasharray: 0.2, 4.8;
+    stroke-dashoffset: 0.1;
+  }
+  
+  .minute_marker {
+    fill: transparent;
+    stroke: #0f0e0e;
+    stroke-width: 7;
+    stroke-dasharray: 0.2, 0.8;
+    stroke-dashoffset: 0.1;
+  }
+  
+  .hand {
+    stroke: #ffffff;
+    stroke-width: 2;
+    /* stroke-linecap: square; */
+  }
+  
+  .hand--thick {
+    stroke-width: 6;
+  }
+  
+  .hand--second {
+    stroke: gold;
+  }
+  
+  .hour_trimmer {
+    fill: #ad2121;
+    stroke: #ad2121;
+    stroke-width: 1;
+  }
+  
+  .minute_trimmer {
+    fill: #ad2121;
+    stroke: #ad2121;
+    stroke-width: 1;
+  }
